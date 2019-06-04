@@ -1,0 +1,28 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 offset-md-3">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Create new account</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <form [formGroup]="form">
+            <div class="form-group">
+              <label>E-mail</label>
+              <input type="text" formControlName="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" formControlName="password" class="form-control">
+            </div>
+            <div class="d-flex">
+              <button (click)="submit()" mat-raised-button color="primary">Create account</button>
+              <div class="flex-fill"></div>
+              <button mat-button routerLink="/login">Login</button>
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
